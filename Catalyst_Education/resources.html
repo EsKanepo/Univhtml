@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sumber Belajar & Referensi — CodeCatalyst</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/courses-detail.css">
+</head>
+<body>
+  <!-- nav -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="resource/Logo_Code.png" width="40" height="40" class="me-2" style="border-radius:6px;">
+      <span>CodeCatalyst</span>
+    </a>
+
+    <ul class="navbar-nav ms-auto d-flex flex-row gap-2">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link">
+          <i class="fa-solid fa-house me-1"></i> Home
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="about.html" class="nav-link">
+          <i class="fa-solid fa-circle-info me-1"></i> About
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="courses.html" class="nav-link">
+          <i class="fa-solid fa-book-open-reader me-1"></i> Courses
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="schedule.html" class="nav-link">
+          <i class="fa-solid fa-calendar-days me-1"></i> Schedule
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="register.html" class="btn btn-accent">
+          <i class="fa-solid fa-user-plus me-1"></i> Register
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- header -->
+  <section class="page-header">
+    <div class="container">
+      <h1><i class="fa-solid fa-book me-2"></i>Sumber Belajar & Referensi</h1>
+      <p class="lead">Koleksi buku, artikel, dan tools untuk mendukung pembelajaran Anda</p>
+    </div>
+  </section>
+
+  <!-- main -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        
+        <!-- Buku Referensi -->
+        <div class="col-12" id="buku">
+          <div class="content-card">
+            <h3 class="card-title">
+              <i class="fa-solid fa-book-bookmark me-2"></i>Buku Referensi
+            </h3>
+            <div class="row g-3">
+              <div class="col-md-6 col-lg-4">
+                <div class="resource-item">
+                  <i class="fa-brands fa-html5 resource-icon text-danger"></i>
+                  <h5>HTML & CSS: Design and Build Websites</h5>
+                  <p class="text-muted small">Jon Duckett</p>
+                  <a href="https://www.htmlandcssbook.com/" target="_blank" class="btn btn-sm btn-outline-primary">
+                    <i class="fa-solid fa-external-link me-1"></i>Lihat Buku
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="resource-item">
+                  <i class="fa-brands fa-js resource-icon text-warning"></i>
+                  <h5>Eloquent JavaScript</h5>
+                  <p class="text-muted small">Marijn Haverbeke</p>
+                  <a href="https://eloquentjavascript.net/" target="_blank" class="btn btn-sm btn-outline-primary">
+                    <i class="fa-solid fa-external-link me-1"></i>Lihat Buku
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="resource-item">
+                  <i class="fa-brands fa-react resource-icon text-info"></i>
+                  <h5>Learning React</h5>
+                  <p class="text-muted small">Alex Banks & Eve Porcello</p>
+                  <a href="https://www.oreilly.com/library/view/learning-react-2nd/9781492051718/" target="_blank" class="btn btn-sm btn-outline-primary">
+                    <i class="fa-solid fa-external-link me-1"></i>Lihat Buku
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Website Tutorial -->
+        <div class="col-lg-6">
+          <div class="content-card">
+            <h3 class="card-title">
+              <i class="fa-solid fa-globe me-2"></i>Website Tutorial
+            </h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <i class="fa-solid fa-circle-check me-2 text-success"></i>
+                <strong>MDN Web Docs</strong>
+                <p class="mb-1 text-muted small">Dokumentasi lengkap HTML, CSS, dan JavaScript</p>
+                <a href="https://developer.mozilla.org/" target="_blank" class="text-primary small">
+                  <i class="fa-solid fa-link me-1"></i>developer.mozilla.org
+                </a>
+              </li>
+              <li class="list-group-item">
+                <i class="fa-solid fa-circle-check me-2 text-success"></i>
+                <strong>W3Schools</strong>
+                <p class="mb-1 text-muted small">Tutorial interaktif dan contoh code</p>
+                <a href="https://www.w3schools.com/" target="_blank" class="text-primary small">
+                  <i class="fa-solid fa-link me-1"></i>w3schools.com
+                </a>
+              </li>
+              <li class="list-group-item">
+                <i class="fa-solid fa-circle-check me-2 text-success"></i>
+                <strong>freeCodeCamp</strong>
+                <p class="mb-1 text-muted small">Platform belajar coding gratis</p>
+                <a href="https://www.freecodecamp.org/" target="_blank" class="text-primary small">
+                  <i class="fa-solid fa-link me-1"></i>freecodecamp.org
+                </a>
+              </li>
+              <li class="list-group-item">
+                <i class="fa-solid fa-circle-check me-2 text-success"></i>
+                <strong>CSS-Tricks</strong>
+                <p class="mb-1 text-muted small">Tips dan trik CSS modern</p>
+                <a href="https://css-tricks.com/" target="_blank" class="text-primary small">
+                  <i class="fa-solid fa-link me-1"></i>css-tricks.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Video Channel -->
+        <div class="col-lg-6" id="video">
+          <div class="content-card">
+            <h3 class="card-title">
+              <i class="fa-brands fa-youtube me-2"></i>Channel YouTube
+            </h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <i class="fa-brands fa-youtube me-2 text-danger"></i>
+                <strong>Web Programming UNPAS</strong>
+                <p class="mb-1 text-muted small">Tutorial bahasa Indonesia</p>
+                <a href="https://www.youtube.com/@sandhikagalihWPU" target="_blank" class="text-primary small">
+                  <i class="fa-solid fa-link me-1"></i>Kunjungi Channel
+                </a>
+              </li>
+              <li class="list-group-item">
+                <i class="fa-brands fa-youtube me-2 text-danger"></i>
+                <strong>Traversy Media</strong>
+                <p class="mb-1 text-muted small">Tutorial web development lengkap</p>
+                <a href="https://www.youtube.com/@TraversyMedia" target="_blank" class="text-primary small">
+                  <i class="fa-solid fa-link me-1"></i>Kunjungi Channel
+                </a>
+              </li>
+              <li class="list-group-item">
+                <i class="fa-brands fa-youtube me-2 text-danger"></i>
+                <strong>Net Ninja</strong>
+                <p class="mb-1 text-muted small">Tutorial JavaScript dan framework</p>
+                <a href="https://www.youtube.com/@NetNinja" target="_blank" class="text-primary small">
+                  <i class="fa-solid fa-link me-1"></i>Kunjungi Channel
+                </a>
+              </li>
+              <li class="list-group-item">
+                <i class="fa-brands fa-youtube me-2 text-danger"></i>
+                <strong>Fireship</strong>
+                <p class="mb-1 text-muted small">Quick tips dan modern web dev</p>
+                <a href="https://www.youtube.com/@Fireship" target="_blank" class="text-primary small">
+                  <i class="fa-solid fa-link me-1"></i>Kunjungi Channel
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tools & Software -->
+        <div class="col-12">
+          <div class="content-card">
+            <h3 class="card-title">
+              <i class="fa-solid fa-toolbox me-2"></i>Tools & Software
+            </h3>
+            <div class="row g-3">
+              <div class="col-md-6 col-lg-3">
+                <div class="tool-card">
+                  <i class="fa-solid fa-code tool-icon"></i>
+                  <h6>VS Code</h6>
+                  <p class="text-muted small mb-2">Code Editor</p>
+                  <a href="https://code.visualstudio.com/" target="_blank" class="btn btn-sm btn-primary w-100">
+                    Download
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="tool-card">
+                  <i class="fa-brands fa-git-alt tool-icon"></i>
+                  <h6>Git</h6>
+                  <p class="text-muted small mb-2">Version Control</p>
+                  <a href="https://git-scm.com/" target="_blank" class="btn btn-sm btn-primary w-100">
+                    Download
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="tool-card">
+                  <i class="fa-brands fa-figma tool-icon"></i>
+                  <h6>Figma</h6>
+                  <p class="text-muted small mb-2">Design Tool</p>
+                  <a href="https://www.figma.com/" target="_blank" class="btn btn-sm btn-primary w-100">
+                    Buka Web
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="tool-card">
+                  <i class="fa-brands fa-chrome tool-icon"></i>
+                  <h6>Chrome DevTools</h6>
+                  <p class="text-muted small mb-2">Browser Tools</p>
+                  <a href="https://developer.chrome.com/docs/devtools/" target="_blank" class="btn btn-sm btn-primary w-100">
+                    Pelajari
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dokumentasi Framework -->
+        <div class="col-12">
+          <div class="content-card">
+            <h3 class="card-title" id="Dokumentasi">
+              <i class="fa-solid fa-file-lines me-2"></i>Dokumentasi Framework
+            </h3>
+            <div class="row">
+              <div class="col-md-6 col-lg-3 mb-3">
+                <a href="https://getbootstrap.com/docs/" target="_blank" class="doc-link">
+                  <i class="fa-brands fa-bootstrap"></i>
+                  <span>Bootstrap Docs</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-3">
+                <a href="https://react.dev/" target="_blank" class="doc-link">
+                  <i class="fa-brands fa-react"></i>
+                  <span>React Docs</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-3">
+                <a href="https://vuejs.org/guide/" target="_blank" class="doc-link">
+                  <i class="fa-brands fa-vuejs"></i>
+                  <span>Vue.js Docs</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-3">
+                <a href="https://nodejs.org/docs/" target="_blank" class="doc-link">
+                  <i class="fa-brands fa-node-js"></i>
+                  <span>Node.js Docs</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="col-12 text-center">
+          <div class="cta-box">
+            <h4><i class="fa-solid fa-graduation-cap me-2"></i>Mulai Belajar Sekarang!</h4>
+            <p class="mb-3">Gunakan sumber-sumber di atas untuk memperdalam pemahaman Anda</p>
+            <a href="courses.html" class="btn btn-accent btn-lg me-2">
+              <i class="fa-solid fa-book-open me-1"></i> Lihat Kursus
+            </a>
+            <a href="register.html" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-user-plus me-1"></i> Daftar Sekarang
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="d-flex justify-content-between flex-wrap">
+      <div><strong>CodeCatalyst</strong> — Project UTS Pengembangan Pemrograman</div>
+      <div><small>Kelompok Catalyst • Hak Cipta &copy; 2025</small></div>
+    </div>
+  </footer>
+
+</body>
+</html>

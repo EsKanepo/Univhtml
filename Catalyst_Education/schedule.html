@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CodeCatalyst — Jadwal Kelas & Tutor</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/schedule.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand d-flex align-items-center" href="index.html">
+    <img src="img/Logo_Code.png" width="40" height="40" class="me-2" style="border-radius:6px;">
+    <span>CodeCatalyst</span>
+  </a>
+
+  <ul class="navbar-nav ms-auto d-flex flex-row gap-2">
+    <li class="nav-item">
+      <a href="index.html" class="nav-link">
+        <i class="fa-solid fa-house me-1"></i> Home
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="about.html" class="nav-link">
+        <i class="fa-solid fa-circle-info me-1"></i> About
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="courses.html" class="nav-link">
+        <i class="fa-solid fa-book-open-reader me-1"></i> Courses
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="schedule.html" class="nav-link active">
+        <i class="fa-solid fa-calendar-days me-1"></i> Schedule
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="register.html" class="btn btn-accent">
+        <i class="fa-solid fa-user-plus me-1"></i> Register
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+  <section class="schedule-section">
+    <div class="container schedule-layout">
+
+      <div class="schedule-main">
+
+        <div class="schedule-header">
+          <h2>Jadwal Kelas & Tutor</h2>
+          <p>Klik hari untuk melihat jadwal lengkap dan tutor yang mengajar.</p>
+        </div>
+
+        <div class="schedule-container">
+
+          <div class="day-card" onclick="toggleSchedule('monday')">
+            <h4><i class="fa-solid fa-calendar-day me-2"></i>Senin</h4>
+            <div id="monday" class="schedule-content">
+              <p><strong>Waktu:</strong> 09.00 - 11.00</p>
+              <p><strong>Kelas:</strong> HTML & CSS</p>
+              <p><strong>Tutor:</strong> <a href="tutor.html#selly">Selly Safira Putri</a></p>
+            </div>
+          </div>
+
+          <div class="day-card" onclick="toggleSchedule('tuesday')">
+            <h4><i class="fa-solid fa-calendar-day me-2"></i>Selasa</h4>
+            <div id="tuesday" class="schedule-content">
+              <p><strong>Waktu:</strong> 10.00 - 12.00</p>
+              <p><strong>Kelas:</strong> JavaScript Dasar</p>
+              <p><strong>Tutor:</strong> <a href="tutor.html#ethan">Ethan Wilbert</a></p>
+            </div>
+          </div>
+
+          <div class="day-card" onclick="toggleSchedule('wednesday')">
+            <h4><i class="fa-solid fa-calendar-day me-2"></i>Rabu</h4>
+            <div id="wednesday" class="schedule-content">
+              <p><strong>Waktu:</strong> 13.00 - 15.00</p>
+              <p><strong>Kelas:</strong> Bootstrap & Layout</p>
+              <p><strong>Tutor:</strong> <a href="tutor.html#jhonson">Jhonson H. Halim</a></p>
+            </div>
+          </div>
+
+          <div class="day-card" onclick="toggleSchedule('thursday')">
+            <h4><i class="fa-solid fa-calendar-day me-2"></i>Kamis</h4>
+            <div id="thursday" class="schedule-content">
+              <p><strong>Waktu:</strong> 09.00 - 11.00</p>
+              <p><strong>Kelas:</strong> Responsive Design</p>
+              <p><strong>Tutor:</strong> <a href="tutor.html#anggara">Anggara Adelee</a></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="courses.html" class="btn btn-accent"><i class="fa-solid fa-book-open me-1"></i> Lihat Courses</a>
+        </div>
+      </div>
+
+      <aside class="schedule-sidebar">
+        <h5><i class="fa-solid fa-bullhorn me-2"></i> Info & Link</h5>
+
+        <div class="sidebar-box">
+          <p><strong>🔥 Promo Akhir Tahun!</strong><br>
+          Dapatkan potongan 30% untuk kelas JavaScript dan React. <a href="register.html">Daftar sekarang!</a></p>
+        </div>
+
+        <div class="sidebar-box">
+          <h6>🔗 Link Cepat</h6>
+          <ul>
+            <li><a href="index.html">🏠 Beranda</a></li>
+            <li><a href="tutor.html">👩‍🏫 Tutor</a></li>
+            <li><a href="courses.html">📘 Kursus</a></li>
+            <li><a href="register.html">📝 Pendaftaran</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-box">
+          <h6>🌐 Sumber Belajar</h6>
+          <ul>
+            <li><a href="https://developer.mozilla.org/id/" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+            <li><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="d-flex justify-content-between flex-wrap">
+      <div><strong>CodeCatalyst</strong> — Jadwal Kelas & Tutor</div>
+      <div><small>Kelompok Catalyst • Hak Cipta © 2025</small></div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleSchedule(id) {
+      const element = document.getElementById(id);
+      element.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

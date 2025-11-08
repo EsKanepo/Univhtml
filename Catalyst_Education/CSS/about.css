@@ -1,0 +1,229 @@
+:root {
+  --brand-dark: #082a59;
+  --brand-light: #3aa0ff;
+  --accent: #ffb703;
+  --muted: #6c757d;
+}
+
+body {
+  font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin: 0;
+  color: #0b1220;
+  background: #ffffff;
+}
+
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  border-bottom: 1px solid #eee;
+  padding: 0.75rem 1.5rem;
+}
+
+.navbar-brand span {
+  font-weight: 700;
+  font-size: 20px;
+  color: #0a0a0a;
+}
+
+.navbar .nav-link {
+  color: #0a0a0a !important;
+  font-weight: 600;
+  padding: 8px 12px;
+  transition: background-color 0.25s ease;
+}
+
+.navbar .nav-link:hover {
+  background: #f0eee9;
+  border-radius: 999px;
+}
+
+.nav-link:hover i {
+  color: var(--brand-light);
+}
+
+.navbar .nav-link.active{
+  background: linear-gradient(135deg, var(--brand-dark), var(--brand-light));
+  color: white !important;
+  border-radius: 999px;
+}
+
+.navbar .nav-link.active i{
+  color: white !important;
+}
+
+.btn-accent{
+  box-shadow: 0 8px 22px rgba(255, 138, 0, 0.14);
+  background: var(--accent);
+  color: #0a0a0a !important;
+  font-weight: 700;
+  border: 2px solid var(--accent);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn-accent:hover{
+  background: white;
+  border: 2px solid var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 138, 0, 0.2);
+}
+
+.btn-accent i {
+  color: #0a0a0a;
+  transition: color 0.3s ease;
+}
+
+.btn-accent:hover i {
+  color: var(--brand-light);
+}
+
+
+.brand-hero { 
+  background: white;
+  padding: 80px 20px;
+}
+
+
+.brand-hero h1 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.brand-hero .lead {
+  line-height: 1.6;
+}
+
+main h3, main h4 {
+  font-weight: 700;
+  color: var(--brand-dark);
+}
+
+main p {
+  line-height: 1.7;
+  color: #333;
+}
+
+main ul li {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.feature-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+  transition: background-color .25s ease, box-shadow .25s ease, transform .18s ease;
+  min-height: 110px;
+  color: #333;
+}
+
+.feature-card h6, .feature-card h5 {
+  margin: 0 0 .5rem 0;
+  font-weight: 700;
+}
+
+.feature-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.course-link-item:focus .feature-card,
+.course-link-item:hover .feature-card,
+.feature-card:focus {
+  background: #f9fafb;
+  box-shadow: 0 10px 28px rgba(16,24,40,0.10);
+  transform: translateY(-4px);
+  outline: none;
+}
+
+.thumb-link { 
+  position:relative; 
+  display:block; 
+  width:100%; 
+  max-width:620px; 
+  border-radius:8px; 
+  overflow:hidden; 
+  margin: 0 auto;
+}
+
+.thumb-img { 
+  width:100%; 
+  height:auto; 
+  display:block; 
+}
+
+.play-overlay { 
+  position:absolute; 
+  left:50%; top:50%; 
+  transform:translate(-50%,-50%); 
+  background:rgba(0,0,0,0.6); 
+  color:#fff; 
+  padding:12px 16px; 
+  border-radius:50%; 
+  font-size:28px; 
+}
+
+.hero-illustration {
+  max-width: 380px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 8px 26px rgba(11,112,217,0.06);
+}
+
+.muted-small {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.social-icons a {
+      display: inline-block;
+      margin: 0px auto;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      border-radius: 50%;
+      color: white;
+      font-size: 22px;
+      transition: 0.3s;
+}
+
+.social-icons a.instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+.social-icons a.facebook { background: #3b5998; }
+.social-icons a.twitter  { background: #1da1f2; }
+.social-icons a.youtube  { background: #ff0000; }
+.social-icons a.linkedin { background: #0077b5; }
+.social-icons a.tiktok   { background: #000000; }
+.social-icons a:hover {
+      transform: scale(1.1);
+      opacity: 0.8;
+}
+
+
+@media (max-width: 991px) {
+  .brand-hero {
+    padding: 2rem 1rem;
+  }
+  .hero-illustration {
+    display: none;
+  }
+   .navbar .nav-link{
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .brand-hero h1 {
+    font-size: 1.4rem;
+  }
+  .feature-card {
+    padding: 1rem;
+  }
+    .navbar .nav-link{ 
+    font-size:.95rem; 
+    padding:6px 10px; 
+  }
+}
+
