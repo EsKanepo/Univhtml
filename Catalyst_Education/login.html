@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masuk - CodeCatalyst</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/login.css" />
+</head>
+<body>
+  <div class="form-container">
+    <div class="logo-section">
+      <img src="img/Logo_Code.png" alt="Logo CodeCatalyst" class="logo">
+      <h2><i class="fa-solid fa-right-to-bracket"></i> Masuk ke Akun</h2>
+      <p class="subtitle">Selamat datang kembali! Silakan masuk untuk melanjutkan.</p>
+    </div>
+
+    <form action="index.html" method="get">
+      <div class="input-group">
+        <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required />
+      </div>
+
+      <div class="input-group">
+        <label for="password"><i class="fa-solid fa-lock"></i> Password</label>
+        <input type="password" id="password" name="password" placeholder="Masukkan password Anda" required />
+      </div>
+
+      <button type="submit" class="submit-btn">
+        <i class="fa-solid fa-sign-in-alt"></i> Masuk Sekarang
+      </button>
+
+      <p class="register-redirect">
+        Belum punya akun?
+        <a href="register.html" class="register-link">Daftar di sini</a>
+      </p>
+    </form>
+  </div>
+
+</body>
+</html>

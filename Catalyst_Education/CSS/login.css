@@ -1,0 +1,221 @@
+:root {
+  --brand-dark: #082a59;
+  --brand-light: #3aa0ff;
+  --accent: #ffb703;
+  --muted: #6c757d;
+}
+
+body {
+  background: linear-gradient(135deg, var(--brand-dark) 0%, #0a1929 50%, var(--brand-light) 100%);
+  background-attachment: fixed;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(58, 160, 255, 0.1) 0%, transparent 70%);
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.form-container {
+  background: rgba(12, 52, 107, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 40px 70px 40px 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.6s ease-out;
+  margin: 0 auto;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  margin-bottom: 15px;
+  box-shadow: 0 8px 20px rgba(255, 183, 3, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+h2 i {
+  color: var(--accent);
+  margin-right: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+label i {
+  color: var(--accent);
+  margin-right: 6px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--brand-light);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0 4px rgba(58, 160, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.submit-btn {
+  width: 107%;
+  padding: 14px;
+  background: linear-gradient(135deg, var(--accent), #ffd93d);
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 8px 20px rgba(255, 183, 3, 0.3);
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(255, 183, 3, 0.5);
+  background: linear-gradient(135deg, #ffd93d, var(--accent));
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+.submit-btn i {
+  margin-right: 8px;
+}
+
+.register-redirect {
+  text-align: center;
+  margin-top: 25px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+}
+
+.register-link {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.register-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.register-link:hover {
+  color: #ffd93d;
+}
+
+.register-link:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    padding: 30px 20px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+}

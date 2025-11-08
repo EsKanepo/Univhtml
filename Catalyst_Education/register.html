@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulir Pendaftaran Kursus</title>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="CSS/register.css" />
+</head>
+<body>
+  <div class="form-container">
+    <div class="logo-section">
+      <img src="img/Logo_Code.png" alt="Logo CodeCatalyst" class="logo">
+      <h2><i class="fa-solid fa-user-plus"></i> Daftar Akun Baru</h2>
+      <p class="subtitle">Bergabunglah dengan CodeCatalyst dan mulai belajar sekarang!</p>
+    </div>
+
+    <form action="index.html" method="get">
+      <div class="input-group">
+        <label for="name"><i class="fa-solid fa-user"></i> Nama Lengkap</label>
+        <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap Anda" required />
+      </div>
+
+      <div class="input-group">
+        <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required />
+      </div>
+
+      <div class="input-group">
+        <label for="password"><i class="fa-solid fa-lock"></i> Password</label>
+        <input type="password" id="password" name="password" placeholder="Buat password yang kuat" required />
+      </div>
+
+      <input type="hidden" id="kelas" name="kelas" value="Frontend Development" />
+
+      <div class="options">
+        <p><i class="fa-solid fa-laptop"></i> Metode Belajar:</p>
+        <label><input type="radio" name="mode" value="online" required> <i class="fa-solid fa-wifi"></i> Online</label>
+        <label><input type="radio" name="mode" value="offline"> <i class="fa-solid fa-building"></i> Offline</label>
+      </div>
+
+      <div class="btn-group">
+        <button type="submit" class="submit-btn"><i class="fa-solid fa-paper-plane"></i> Daftar Sekarang</button>
+        <button type="reset" class="reset-btn"><i class="fa-solid fa-rotate-right"></i> Reset</button>
+      </div>
+
+      <p class="login-redirect">
+        Sudah punya akun?
+        <a href="login.html" class="login-link">Masuk di sini</a>
+      </p>
+    </form>
+  </div>
+
+</body>
+</html>
